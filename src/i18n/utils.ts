@@ -7,7 +7,7 @@ export type Lang = 'es' | 'en';
 export type TranslationKey = string;
 
 export function getLangFromUrl(url: URL): Lang {
-  const [, lang] = url.pathname.split('/');
+  const [, lang] = url.pathname.split('/').filter(Boolean);
   if (lang === 'en') return 'en';
   return 'es';
 }
@@ -25,15 +25,21 @@ export function t(key: TranslationKey, lang: Lang): string {
   return typeof current === 'string' ? current : key;
 }
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export function getLocalizedPath(path: string, lang: Lang): string {
-  if (lang === 'en') return `/en${path}`;
-  return path;
+  if (lang === 'en') return `${base}/en${path}`;
+  return `${base}${path}`;
+}
+
+export function assetPath(path: string): string {
+  return `${base}${path}`;
 }
 
 export function getAlternateLangUrl(url: URL): { lang: Lang; href: string }[] {
   const currentLang = getLangFromUrl(url);
   const pathWithoutLang = currentLang === 'en'
-    ? url.pathname.replace('/en', '') || '/'
+    ? url.pathname.replace(/\/en(\/|$)/, '/') || '/'
     : url.pathname;
 
   return [

@@ -1,5 +1,5 @@
 ---
-import { t, getLocalizedPath, type Lang } from '../i18n/utils';
+import { t, getLocalizedPath, assetPath, type Lang } from '../i18n/utils';
 
 interface Props {
   lang: Lang;
@@ -16,19 +16,18 @@ const links = [
   { href: getLocalizedPath('/contacto', lang), label: t('nav.contact', lang) },
 ];
 
-const currentPath = Astro.url.pathname;
-let langToggleHref: string;
-if (lang === 'es') {
-  langToggleHref = currentPath === '/' ? '/en/' : `/en${currentPath}`;
-} else {
-  langToggleHref = currentPath.replace('/en', '') || '/';
+const toggleLang: Lang = lang === 'es' ? 'en' : 'es';
+let pathWithoutLang = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '') || '/';
+if (lang === 'en' && pathWithoutLang.startsWith('/en')) {
+pathWithoutLang = pathWithoutLang.slice(3) || '/';
 }
+const langToggleHref = getLocalizedPath(pathWithoutLang, toggleLang);
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 glass">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
     <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3">
-      <img src="/images/logo.png" alt="MugreCorp" class="h-8 w-8" />
+      <img src={assetPath('/images/logo.png')} alt="MugreCorp" class="h-8 w-8" />
       <span class="font-bold text-lg tracking-tight">MugreCorp</span>
     </a>
 

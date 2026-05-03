@@ -6,6 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   integrations: [react()],
   output: 'static',
+  site: 'https://hugopvigo.github.io',
+  base: '/mugrecorp',
   vite: {
     plugins: [tailwindcss()],
   },

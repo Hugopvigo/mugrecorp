@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { t } from '../i18n/utils';
+import { t, getLocalizedPath, assetPath } from '../i18n/utils';
 
 const lang = 'es' as const;
 ---
@@ -9,7 +9,7 @@ const lang = 'es' as const;
   <section class="pt-32 pb-20">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-6 mb-12">
-        <img src="/images/logo-eu-inc.png" alt={t('footer.eu_inc', lang)} class="h-16 opacity-60" />
+        <img src={assetPath('/images/logo-eu-inc.png')} alt={t('footer.eu_inc', lang)} class="h-16 opacity-60" />
         <div>
           <h1 class="text-3xl sm:text-4xl font-bold">{t('legal.privacy_title', lang)}</h1>
         </div>

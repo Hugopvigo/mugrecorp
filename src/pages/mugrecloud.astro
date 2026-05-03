@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ScrollReveal from '../components/ScrollReveal';
-import { t } from '../i18n/utils';
+import { t, getLocalizedPath, assetPath } from '../i18n/utils';
 
 const lang = 'es' as const;
 ---
@@ -9,13 +9,13 @@ const lang = 'es' as const;
 <BaseLayout lang={lang} title={t('mugrecloud.hero_title', lang) + ' — MugreCorp'}>
   <section class="relative min-h-[60vh] flex items-center overflow-hidden">
     <div class="absolute inset-0">
-      <img src="/images/datacenter.webp" alt="" class="w-full h-full object-cover opacity-15" />
+      <img src={assetPath('/images/datacenter.webp')} alt="" class="w-full h-full object-cover opacity-15" />
       <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
       <ScrollReveal client:load>
         <div class="flex items-center gap-6 mb-8">
-          <img src="/images/mugrecloud-logo.png" alt="MugreCloud" class="h-16 w-16 sm:h-20 sm:w-20" />
+          <img src={assetPath('/images/mugrecloud-logo.png')} alt="MugreCloud" class="h-16 w-16 sm:h-20 sm:w-20" />
           <div>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold">{t('mugrecloud.hero_title', lang)}</h1>
           </div>
@@ -86,7 +86,7 @@ const lang = 'es' as const;
         </ScrollReveal>
         <ScrollReveal client:load delay={150}>
           <div class="glass rounded-2xl p-8">
-            <img src="/images/mugrecloud2.webp" alt="MugreCloud" class="w-full rounded-lg opacity-80" />
+            <img src={assetPath('/images/mugrecloud2.webp')} alt="MugreCloud" class="w-full rounded-lg opacity-80" />
           </div>
         </ScrollReveal>
       </div>
@@ -96,7 +96,7 @@ const lang = 'es' as const;
   <section class="py-24 sm:py-32 bg-dark-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <ScrollReveal client:load>
-        <a href="/contacto" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
+        <a href={getLocalizedPath('/contacto', lang)} class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
           {t('mugrecloud.cta', lang)}
         </a>
       </ScrollReveal>

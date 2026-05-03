@@ -1,5 +1,5 @@
 ---
-import { t, getLocalizedPath, type Lang } from '../i18n/utils';
+import { t, getLocalizedPath, assetPath, type Lang } from '../i18n/utils';
 
 interface Props {
   lang: Lang;
@@ -13,14 +13,14 @@ const { lang } = Astro.props;
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
       <div class="md:col-span-1">
         <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3 mb-4">
-          <img src="/images/logo.png" alt="MugreCorp" class="h-8 w-8" />
+          <img src={assetPath('/images/logo.png')} alt="MugreCorp" class="h-8 w-8" />
           <span class="font-bold text-lg tracking-tight">MugreCorp</span>
         </a>
         <p class="text-sm text-zinc-500 leading-relaxed">
           {t('site.description', lang)}
         </p>
         <div class="mt-6">
-          <img src="/images/logo-eu-inc.png" alt={t('footer.eu_inc', lang)} class="h-12 opacity-60" />
+          <img src={assetPath('/images/logo-eu-inc.png')} alt={t('footer.eu_inc', lang)} class="h-12 opacity-60" />
         </div>
       </div>
 

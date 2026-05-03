@@ -70,9 +70,9 @@
 
 ## 🚀 Deploy
 
-- [ ] **Conectar repo en Vercel** — Ir a [vercel.com/new](https://vercel.com/new), importar `Hugopvigo/mugrecorp`. Framework: Astro. Build command: `npm run build`. Output: `dist/`. No necesita adapter (SSG puro).
-- [ ] **Configurar dominio** — Apuntar `mugrecorp.com` a Vercel DNS.
-- [ ] **Configurar `site` en `astro.config.mjs`** — `site: 'https://mugrecorp.com'` una vez el dominio esté activo.
+- [ ] **Habilitar GitHub Pages en repo** — Settings → Pages → Source: GitHub Actions (ya hay workflow configurado en `.github/workflows/deploy.yml`). Pushear a main dispara el deploy automático.
+- [ ] **Configurar dominio personalizado (opcional)** — En Settings → Pages, añadir `mugrecorp.com` con CNAME apuntando a `hugopvigo.github.io`.
+- [ ] **El `site` en `astro.config.mjs` ya está configurado** — `site: 'https://hugopvigo.github.io'`, `base: '/mugrecorp'`. Si se añade dominio personalizado, cambiar a `site: 'https://mugrecorp.com'` y `base: '/'`.
 
 ---
 

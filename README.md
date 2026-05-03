@@ -7,7 +7,7 @@
 **Computación distribuida. Ecológica. Sin data centers.**
 
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/small.svg)](https://astro.build)
-[![Deploy on Vercel](https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel&logoColor=white)](https://vercel.com)
+[![Deploy on GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222?logo=githubpages&logoColor=white)](https://pages.github.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
@@ -20,7 +20,7 @@
 
 <br />
 
-[`🌐 Sitio Web`](https://mugrecorp.com) · [`📦 MugreCloud`](https://mugrecorp.com/mugrecloud) · [`🔗 Mugrenetes`](https://mugrecorp.com/mugrenetes) · [`🎯 VibeConf`](https://mugrecorp.com/vibeconf)
+[`🌐 Sitio Web`](https://hugopvigo.github.io/mugrecorp) · [`📦 MugreCloud`](https://hugopvigo.github.io/mugrecorp/mugrecloud) · [`🔗 Mugrenetes`](https://hugopvigo.github.io/mugrecorp/mugrenetes) · [`🎯 VibeConf`](https://hugopvigo.github.io/mugrecorp/vibeconf)
 
 </div>
 
@@ -48,7 +48,7 @@
 | ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white) | Utility-first CSS — responsive, dark theme, custom design system |
 | ![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-FF0055?logo=framer&logoColor=white) | Animaciones avanzadas (disponible para futuras interacciones) |
 | ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white) | Tipado estricto end-to-end |
-| ![Vercel](https://img.shields.io/badge/Vercel-Deploy-000?logo=vercel&logoColor=white) | Deploy & CDN edge |
+| ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deploy-222?logo=githubpages&logoColor=white) | Deploy & CDN via GitHub Actions |
 
 ## 📂 Estructura del Proyecto
 
@@ -177,6 +177,6 @@ Toggle de idioma en el navbar. Todos los textos centralizados en `src/i18n/es.js
 
 <div align="center">
 
-**[mugrecorp.com](https://mugrecorp.com)** · Hecho con ☕ y 🖥️ en España
+**[hugopvigo.github.io/mugrecorp](https://hugopvigo.github.io/mugrecorp)** · Hecho con ☕ y 🖥️ en España
 
 </div>
