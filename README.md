@@ -20,7 +20,7 @@
 
 <br />
 
-[`🌐 Sitio Web`](https://hugopvigo.github.io/mugrecorp) · [`📦 MugreCloud`](https://hugopvigo.github.io/mugrecorp/mugrecloud) · [`🔗 Mugrenetes`](https://hugopvigo.github.io/mugrecorp/mugrenetes) · [`🎯 VibeConf`](https://hugopvigo.github.io/mugrecorp/vibeconf)
+[`🌐 Sitio Web`](https://hugopvigo.github.io/Mugrecorp) · [`📦 MugreCloud`](https://hugopvigo.github.io/Mugrecorp/mugrecloud) · [`🔗 Mugrenetes`](https://hugopvigo.github.io/Mugrecorp/mugrenetes) · [`🎯 VibeConf`](https://hugopvigo.github.io/Mugrecorp/vibeconf)
 
 </div>
 
@@ -177,6 +177,6 @@ Toggle de idioma en el navbar. Todos los textos centralizados en `src/i18n/es.js
 
 <div align="center">
 
-**[hugopvigo.github.io/mugrecorp](https://hugopvigo.github.io/mugrecorp)** · Hecho con ☕ y 🖥️ en España
+**[hugopvigo.github.io/Mugrecorp](https://hugopvigo.github.io/Mugrecorp)** · Hecho con ☕ y 🖥️ en España
 
 </div>

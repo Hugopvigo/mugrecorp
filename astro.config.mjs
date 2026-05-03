@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [react()],
   output: 'static',
   site: 'https://hugopvigo.github.io',
-  base: '/mugrecorp',
+  base: '/Mugrecorp',
   vite: {
     plugins: [tailwindcss()],
   },
