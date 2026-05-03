@@ -3,6 +3,5 @@ dist/
 .astro/
 .vercel/
 .vscode/
-.github/
 AGENTS.md
 Plan.md
