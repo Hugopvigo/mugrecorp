@@ -89,12 +89,24 @@
     "cta": "Become a host"
   },
   "vibeconf": {
-    "hero_title": "VibeConf AI 2025",
-    "hero_subtitle": "MugreCorp's AI and distributed technology event.",
-    "desc": "VibeConf brings together developers, researchers, and AI enthusiasts to explore the future of distributed computing, artificial intelligence, and eco-friendly infrastructure.",
-    "date": "Coming soon",
+    "hero_title": "VibeConf AI 2026",
+    "hero_subtitle": "MugreCorp's AI and distributed technology event. Coming soon.",
+    "desc": "VibeConf brings together developers, researchers, and AI enthusiasts to explore the future of distributed computing, artificial intelligence, and eco-friendly infrastructure. Register now and be among the first to secure your spot.",
+    "date": "Coming soon — 2026",
     "location": "Online + In-person",
-    "cta": "Register"
+    "cta": "Register now",
+    "speakers_title": "Speakers",
+    "speakers_subtitle": "The first confirmed speakers for VibeConf AI 2026",
+    "speaker1_name": "@acorsini",
+    "speaker1_role": "Confirmed speaker",
+    "speaker2_name": "@tuxillo",
+    "speaker2_role": "Confirmed speaker",
+    "speaker3_name": "@deluxe",
+    "speaker3_role": "Confirmed speaker",
+    "more_speakers": "And more guests to be confirmed",
+    "register_title": "Register now",
+    "register_desc": "Spots are limited. Leave us your contact and we'll notify you when registration opens.",
+    "register_cta": "I want to register"
   },
   "about": {
     "hero_title": "About Us",

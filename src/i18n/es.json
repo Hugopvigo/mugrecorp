@@ -89,12 +89,24 @@
     "cta": "Conviértete en anfitrión"
   },
   "vibeconf": {
-    "hero_title": "VibeConf AI 2025",
-    "hero_subtitle": "El evento de IA y tecnología distribuida de MugreCorp.",
-    "desc": "VibeConf reúne a desarrolladores, investigadores y entusiastas de la IA para explorar el futuro de la computación distribuida, la inteligencia artificial y la infraestructura ecológica.",
-    "date": "Próximamente",
+    "hero_title": "VibeConf AI 2026",
+    "hero_subtitle": "El evento de IA y tecnología distribuida de MugreCorp. Coming soon.",
+    "desc": "VibeConf reúne a desarrolladores, investigadores y entusiastas de la IA para explorar el futuro de la computación distribuida, la inteligencia artificial y la infraestructura ecológica. Regístrate ya y sé de los primeros en reservar tu plaza.",
+    "date": "Coming soon — 2026",
     "location": "Online + Presencial",
-    "cta": "Regístrate"
+    "cta": "Regístrate ya",
+    "speakers_title": "Ponentes",
+    "speakers_subtitle": "Los primeros confirmados para VibeConf AI 2026",
+    "speaker1_name": "@acorsini",
+    "speaker1_role": "Ponente confirmado",
+    "speaker2_name": "@tuxillo",
+    "speaker2_role": "Ponente confirmado",
+    "speaker3_name": "@deluxe",
+    "speaker3_role": "Ponente confirmado",
+    "more_speakers": "Y más invitados por confirmar",
+    "register_title": "Regístrate ahora",
+    "register_desc": "Las plazas son limitadas. Déjanos tu contacto y te avisaremos cuando abramos inscripciones.",
+    "register_cta": "Quiero registrarme"
   },
   "about": {
     "hero_title": "Quiénes Somos",

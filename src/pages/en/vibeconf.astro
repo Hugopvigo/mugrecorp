@@ -6,13 +6,19 @@ import { t } from '../../i18n/utils';
 const lang = 'en' as const;
 ---
 
-<BaseLayout lang={lang} title={t('vibeconf.hero_title', lang) + ' — MugreCorp'}>
+<BaseLayout lang={lang} title={t('vibeconf.hero_title', lang) + ' — MugreCorp'} description={t('vibeconf.hero_subtitle', lang)}>
   <section class="relative min-h-[70vh] flex items-center overflow-hidden">
     <div class="absolute inset-0">
       <img src="/images/vibeconf.webp" alt="" class="w-full h-full object-cover opacity-25" />
       <div class="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 text-center">
+      <ScrollReveal client:load>
+        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 mb-8">
+          <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+          <span class="text-emerald-400 text-sm font-medium">Coming soon — 2026</span>
+        </div>
+      </ScrollReveal>
       <ScrollReveal client:load>
         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">{t('vibeconf.hero_title', lang)}</h1>
       </ScrollReveal>
@@ -54,11 +60,56 @@ const lang = 'en' as const;
     </div>
   </section>
 
-  <section id="register" class="py-24 sm:py-32">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <section class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <ScrollReveal client:load>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">{t('vibeconf.speakers_title', lang)}</h2>
+          <p class="text-zinc-400 text-lg">{t('vibeconf.speakers_subtitle', lang)}</p>
+        </div>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
+        <ScrollReveal client:load delay={0}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-colors">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 flex items-center justify-center border border-emerald-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-1">{t('vibeconf.speaker1_name', lang)}</h3>
+            <p class="text-zinc-500 text-sm">{t('vibeconf.speaker1_role', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={100}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-colors">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 flex items-center justify-center border border-emerald-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-1">{t('vibeconf.speaker2_name', lang)}</h3>
+            <p class="text-zinc-500 text-sm">{t('vibeconf.speaker2_role', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={200}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-colors">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 flex items-center justify-center border border-emerald-500/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-1">{t('vibeconf.speaker3_name', lang)}</h3>
+            <p class="text-zinc-500 text-sm">{t('vibeconf.speaker3_role', lang)}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+      <ScrollReveal client:load delay={300}>
+        <p class="text-center text-zinc-500 text-lg">{t('vibeconf.more_speakers', lang)}</p>
+      </ScrollReveal>
+    </div>
+  </section>
+
+  <section id="register" class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <ScrollReveal client:load>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{t('vibeconf.register_title', lang)}</h2>
+        <p class="text-zinc-400 text-lg mb-10">{t('vibeconf.register_desc', lang)}</p>
         <a href="/en/contacto" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
-          {t('vibeconf.cta', lang)}
+          {t('vibeconf.register_cta', lang)}
         </a>
       </ScrollReveal>
     </div>

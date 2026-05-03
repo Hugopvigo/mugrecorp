@@ -2,3 +2,5 @@ node_modules/
 dist/
 .astro/
 .vercel/
+AGENTS.md
+Plan.md

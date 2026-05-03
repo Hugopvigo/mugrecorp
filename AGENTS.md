@@ -97,7 +97,11 @@ npm run preview  # Preview production build
 - [x] Legal pages (privacidad, términos with EU Inc logo)
 - [x] Contacto page (form + contact info)
 - [x] i18n complete (ES on /, EN on /en/, language toggle in navbar)
-- [ ] Deploy to Vercel (needs `npm install @astrojs/vercel` and config update for adapter)
+- [x] SEO: hreflang alternate tags, canonical URLs, Open Graph + Twitter meta
+- [x] README.md with badges, emojis, project structure, architecture diagram
+- [x] Git repo pushed to github.com/Hugopvigo/mugrecorp
+- [ ] Deploy to Vercel (static SSG — no adapter needed, just connect repo on Vercel dashboard)
+- [ ] Replace Formspree placeholder URL in ContactForm.tsx with real endpoint
 
 ## Important Notes
 
@@ -107,3 +111,4 @@ npm run preview  # Preview production build
 - All pages must be 100% responsive (mobile-first with Tailwind)
 - No external API calls needed — static site
 - Forms can use Formspree or similar service (no backend needed)
+- Deploy: Vercel auto-detects Astro static output, no adapter required
