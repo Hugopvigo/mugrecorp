@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.BUILD_PATH }}/dist/Mugrecorp
+          path: ${{ env.BUILD_PATH }}/dist
 
   deploy:
     name: Deploy
