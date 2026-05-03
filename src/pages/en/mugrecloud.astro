@@ -9,7 +9,7 @@ const lang = 'en' as const;
 <BaseLayout lang={lang} title={t('mugrecloud.hero_title', lang) + ' — MugreCorp'}>
   <section class="relative min-h-[60vh] flex items-center overflow-hidden">
     <div class="absolute inset-0">
-      <img src={assetPath('/images/datacenter.webp')} alt="" class="w-full h-full object-cover opacity-15" />
+      <img src={assetPath('/images/mugrecloud2.webp')} alt="" class="w-full h-full object-cover opacity-15" />
       <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
@@ -25,7 +25,7 @@ const lang = 'en' as const;
         <p class="text-xl sm:text-2xl text-zinc-400 max-w-2xl mb-10">{t('mugrecloud.hero_subtitle', lang)}</p>
       </ScrollReveal>
       <ScrollReveal client:load delay={200}>
-        <a href="#services" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors">
+        <a href="https://mugre.cloud" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors">
           {t('mugrecloud.cta', lang)}
         </a>
       </ScrollReveal>
@@ -96,7 +96,7 @@ const lang = 'en' as const;
   <section class="py-24 sm:py-32 bg-dark-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <ScrollReveal client:load>
-        <a href={getLocalizedPath('/contacto', lang)} class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
+        <a href="https://mugre.cloud" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
           {t('mugrecloud.cta', lang)}
         </a>
       </ScrollReveal>
