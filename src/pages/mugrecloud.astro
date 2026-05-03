@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ScrollReveal from '../components/ScrollReveal';
+import { t } from '../i18n/utils';
+
+const lang = 'es' as const;
+---
+
+<BaseLayout lang={lang} title={t('mugrecloud.hero_title', lang) + ' — MugreCorp'}>
+  <section class="relative min-h-[60vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/datacenter.webp" alt="" class="w-full h-full object-cover opacity-15" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <ScrollReveal client:load>
+        <div class="flex items-center gap-6 mb-8">
+          <img src="/images/mugrecloud-logo.png" alt="MugreCloud" class="h-16 w-16 sm:h-20 sm:w-20" />
+          <div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold">{t('mugrecloud.hero_title', lang)}</h1>
+          </div>
+        </div>
+      </ScrollReveal>
+      <ScrollReveal client:load delay={100}>
+        <p class="text-xl sm:text-2xl text-zinc-400 max-w-2xl mb-10">{t('mugrecloud.hero_subtitle', lang)}</p>
+      </ScrollReveal>
+      <ScrollReveal client:load delay={200}>
+        <a href="#services" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors">
+          {t('mugrecloud.cta', lang)}
+        </a>
+      </ScrollReveal>
+    </div>
+  </section>
+
+  <section id="services" class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ScrollReveal client:load delay={0}>
+          <div class="glass rounded-2xl p-8 hover:border-emerald-500/30 transition-all">
+            <div class="mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('mugrecloud.hosting', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('mugrecloud.hosting_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={100}>
+          <div class="glass rounded-2xl p-8 hover:border-emerald-500/30 transition-all">
+            <div class="mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('mugrecloud.render', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('mugrecloud.render_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={200}>
+          <div class="glass rounded-2xl p-8 hover:border-emerald-500/30 transition-all">
+            <div class="mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('mugrecloud.ai', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('mugrecloud.ai_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={300}>
+          <div class="glass rounded-2xl p-8 hover:border-emerald-500/30 transition-all">
+            <div class="mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('mugrecloud.storage', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('mugrecloud.storage_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <ScrollReveal client:load>
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">{t('mugrecloud.arch_title', lang)}</h2>
+            <p class="text-zinc-400 text-lg leading-relaxed">{t('mugrecloud.arch_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={150}>
+          <div class="glass rounded-2xl p-8">
+            <img src="/images/mugrecloud2.webp" alt="MugreCloud" class="w-full rounded-lg opacity-80" />
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <ScrollReveal client:load>
+        <a href="/contacto" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-lg">
+          {t('mugrecloud.cta', lang)}
+        </a>
+      </ScrollReveal>
+    </div>
+  </section>
+</BaseLayout>

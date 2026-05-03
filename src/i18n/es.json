@@ -1,0 +1,143 @@
+{
+  "site": {
+    "name": "MugreCorp",
+    "description": "Infraestructura distribuida. Ecológica. Sin data centers."
+  },
+  "nav": {
+    "home": "Inicio",
+    "mugrecloud": "MugreCloud",
+    "mugrenetes": "Mugrenetes",
+    "vibeconf": "VibeConf",
+    "about": "Quiénes Somos",
+    "contact": "Contacto",
+    "lang": "EN"
+  },
+  "hero": {
+    "tagline": "Computación distribuida. Ecológica. Sin data centers.",
+    "title": "La nube que vive en casas, no en centros de datos",
+    "subtitle": "Mini PCs en hogares por toda España forman una red de computación descentralizada, eficiente y respetuosa con el planeta.",
+    "cta_primary": "Descubre MugreCloud",
+    "cta_secondary": "Conviértete en anfitrión"
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Una nueva forma de entender la infraestructura",
+    "step1_title": "Anfitriones",
+    "step1_desc": "Colaboradores alojan mini PCs Intel N100 en sus hogares, aprovechando su conexión a internet y energía.",
+    "step2_title": "Red distribuida",
+    "step2_desc": "Los nodos forman una red resiliente y descentralizada que procesa en paralelo sin puntos únicos de fallo.",
+    "step3_title": "Tú consumes",
+    "step3_desc": "Desarrolladores, pymes y proyectos acceden a potencia de computación por uso, sin costes de data center."
+  },
+  "products": {
+    "title": "Nuestros productos",
+    "subtitle": "Infraestructura para la próxima generación",
+    "mugrecloud_title": "MugreCloud",
+    "mugrecloud_desc": "Servicios de hosting, render, IA y almacenamiento distribuido. Pago por uso, precios competitivos.",
+    "mugrecloud_cta": "Explorar MugreCloud",
+    "mugrenetes_title": "Mugrenetes",
+    "mugrenetes_desc": "La red de nodos distribuidos que da vida a toda la infraestructura. Resiliente, flexible, gamificada.",
+    "mugrenetes_cta": "Explorar Mugrenetes"
+  },
+  "sustainability": {
+    "title": "Sostenibilidad que se cuenta",
+    "subtitle": "Cada nodo fuera de un data center es CO2 que no se emite",
+    "co2_saved": "Toneladas CO2 evitadas",
+    "nodes_active": "Nodos activos",
+    "energy_saved": "Ahorro energético vs DC",
+    "community": "Anfitriones en la red"
+  },
+  "community": {
+    "title": "Comunidad gamificada",
+    "subtitle": "Cada anfitrión importa. Cada nodo cuenta.",
+    "rankings": "Rankings de contribución",
+    "badges": "Logros y badges",
+    "rewards": "Recompensas exclusivas",
+    "growth": "Crecimiento orgánico",
+    "cta": "Únete a la red"
+  },
+  "cta": {
+    "title": "Únete a la revolución distribuida",
+    "subtitle": "Ya seas desarrollador, empresa o anfitrión, hay un lugar para ti en MugreCorp.",
+    "primary": "Empieza con MugreCloud",
+    "secondary": "Hazte anfitrión"
+  },
+  "mugrecloud": {
+    "hero_title": "MugreCloud",
+    "hero_subtitle": "Computación distribuida por uso. Sin data centers, sin costes ocultos.",
+    "hosting": "Hosting",
+    "hosting_desc": "Alojamiento web distribuido con alta disponibilidad y latencia baja en toda España.",
+    "render": "Render",
+    "render_desc": "Renderizado distribuido para proyectos 3D, vídeo y diseño sin hardware dedicado.",
+    "ai": "Procesamiento IA",
+    "ai_desc": "Capacidad de inferencia IA distribuida para modelos ligeros y tareas de procesamiento.",
+    "storage": "Almacenamiento",
+    "storage_desc": "Almacenamiento distribuido y redundante. Tus datos, replicados en múltiples nodos.",
+    "arch_title": "Arquitectura distribuida",
+    "arch_desc": "Cada petición se enruta al nodo más cercano y disponible. Sin cuellos de botella, sin puntos únicos de fallo. La red se adapta automáticamente a la carga y distribución geográfica.",
+    "cta": "Empieza gratis"
+  },
+  "mugrenetes": {
+    "hero_title": "Mugrenetes",
+    "hero_subtitle": "La red de nodos que hace posible todo. Distribuida, resiliente, gamificada.",
+    "what_title": "¿Qué es Mugrenetes?",
+    "what_desc": "Mugrenetes es la capa de red que conecta todos los nodos distribuidos de MugreCorp. Cada mini PC Intel N100 alojado en un hogar es un nodo de la red, aportando capacidad de computación y almacenamiento.",
+    "resilience_title": "Resiliencia integrada",
+    "resilience_desc": "La descentralización física permite tolerancia a fallos, mitigación de caídas globales y una red flexible, resistente a crisis energéticas o geopolíticas.",
+    "gamification_title": "Gamificación",
+    "gamification_desc": "Promovemos una comunidad de anfitriones mediante rankings, logros y beneficios. Cada colaborador fortalece el ecosistema de forma orgánica y sostenible.",
+    "cta": "Conviértete en anfitrión"
+  },
+  "vibeconf": {
+    "hero_title": "VibeConf AI 2025",
+    "hero_subtitle": "El evento de IA y tecnología distribuida de MugreCorp.",
+    "desc": "VibeConf reúne a desarrolladores, investigadores y entusiastas de la IA para explorar el futuro de la computación distribuida, la inteligencia artificial y la infraestructura ecológica.",
+    "date": "Próximamente",
+    "location": "Online + Presencial",
+    "cta": "Regístrate"
+  },
+  "about": {
+    "hero_title": "Quiénes Somos",
+    "hero_subtitle": "Construimos infraestructura para un futuro más verde y distribuido.",
+    "mission_title": "Nuestra misión",
+    "mission_desc": "MugreCorp Inc es una empresa de tecnología ecológica y descentralizada que ofrece servicios de computación distribuida utilizando mini PCs Intel N100 alojados en hogares por toda España. Nos enfocamos en la sostenibilidad, eficiencia energética y resiliencia digital.",
+    "vision_title": "Nuestra visión",
+    "vision_desc": "Reducir costes y emisiones mediante una infraestructura innovadora y colaborativa. Apostamos por la ecología al reducir el uso de materiales, consumo energético y evitando centros de datos tradicionales de alto impacto ambiental.",
+    "values_title": "Nuestros valores",
+    "value1": "Sostenibilidad",
+    "value1_desc": "Cada decisión se mide por su impacto ambiental. Sin data centers, sin despilfarro energético.",
+    "value2": "Descentralización",
+    "value2_desc": "La resiliencia viene de la distribución. Sin puntos únicos de fallo, sin control centralizado.",
+    "value3": "Comunidad",
+    "value3_desc": "Los anfitriones son el corazón de MugreCorp. Gamificamos la contribución para crecer juntos.",
+    "offices_title": "Nuestras oficinas",
+    "old_office": "Oficina original",
+    "new_office": "Nueva oficina"
+  },
+  "legal": {
+    "privacy_title": "Política de Privacidad",
+    "terms_title": "Términos de Uso",
+    "privacy_content": "MugreCorp Inc se compromete a proteger la privacidad de sus usuarios. Recopilamos únicamente la información necesaria para prestar nuestros servicios: datos de cuenta, uso de servicios y comunicación. No vendemos ni compartimos datos personales con terceros para fines publicitarios. Utilizamos medidas de seguridad estándar de la industria para proteger la información. Puedes solicitar la eliminación de tus datos en cualquier momento contactando a privacy@mugrecorp.com. Esta política puede actualizarse periódicamente. El uso continuado de nuestros servicios constituye la aceptación de cualquier cambio.",
+    "terms_content": "Al utilizar los servicios de MugreCorp Inc, aceptas estos términos. Los servicios se proporcionan \"tal cual\" y \"según disponibilidad\". Eres responsable del uso que hagas de la infraestructura, debiendo cumplir con todas las leyes aplicables. MugreCorp no se hace responsable de daños indirectos, incidentales o consecuentes derivados del uso de los servicios. Los anfitriones aceptan proporcionar un entorno seguro y estable para los nodos. Nos reservamos el derecho de suspender cuentas que violen estos términos. Para disputas, se aplicarán las leyes de España con jurisdicción en los tribunales competentes."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes preguntas? ¿Quieres unirte como anfitrión? Escríbenos.",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "info_title": "Información de contacto",
+    "info_email": "hola@mugrecorp.com",
+    "info_location": "España"
+  },
+  "footer": {
+    "products": "Productos",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "rights": "Todos los derechos reservados.",
+    "eu_inc": "MugreCorp EU Inc."
+  }
+}

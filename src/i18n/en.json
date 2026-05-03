@@ -1,0 +1,143 @@
+{
+  "site": {
+    "name": "MugreCorp",
+    "description": "Distributed infrastructure. Eco-friendly. No data centers."
+  },
+  "nav": {
+    "home": "Home",
+    "mugrecloud": "MugreCloud",
+    "mugrenetes": "Mugrenetes",
+    "vibeconf": "VibeConf",
+    "about": "About Us",
+    "contact": "Contact",
+    "lang": "ES"
+  },
+  "hero": {
+    "tagline": "Distributed computing. Eco-friendly. No data centers.",
+    "title": "The cloud that lives in homes, not data centers",
+    "subtitle": "Mini PCs in homes across Spain form a decentralized, efficient, and planet-friendly computing network.",
+    "cta_primary": "Discover MugreCloud",
+    "cta_secondary": "Become a host"
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "A new way to understand infrastructure",
+    "step1_title": "Hosts",
+    "step1_desc": "Collaborators host Intel N100 mini PCs in their homes, leveraging their internet connection and energy.",
+    "step2_title": "Distributed network",
+    "step2_desc": "Nodes form a resilient and decentralized network that processes in parallel without single points of failure.",
+    "step3_title": "You consume",
+    "step3_desc": "Developers, SMEs, and projects access computing power on-demand, without data center costs."
+  },
+  "products": {
+    "title": "Our products",
+    "subtitle": "Infrastructure for the next generation",
+    "mugrecloud_title": "MugreCloud",
+    "mugrecloud_desc": "Distributed hosting, rendering, AI, and storage services. Pay-per-use, competitive pricing.",
+    "mugrecloud_cta": "Explore MugreCloud",
+    "mugrenetes_title": "Mugrenetes",
+    "mugrenetes_desc": "The distributed node network that powers all infrastructure. Resilient, flexible, gamified.",
+    "mugrenetes_cta": "Explore Mugrenetes"
+  },
+  "sustainability": {
+    "title": "Sustainability that counts",
+    "subtitle": "Every node outside a data center is CO2 not emitted",
+    "co2_saved": "Tonnes CO2 avoided",
+    "nodes_active": "Active nodes",
+    "energy_saved": "Energy savings vs DC",
+    "community": "Hosts in the network"
+  },
+  "community": {
+    "title": "Gamified community",
+    "subtitle": "Every host matters. Every node counts.",
+    "rankings": "Contribution rankings",
+    "badges": "Achievements & badges",
+    "rewards": "Exclusive rewards",
+    "growth": "Organic growth",
+    "cta": "Join the network"
+  },
+  "cta": {
+    "title": "Join the distributed revolution",
+    "subtitle": "Whether you're a developer, company, or host, there's a place for you at MugreCorp.",
+    "primary": "Start with MugreCloud",
+    "secondary": "Become a host"
+  },
+  "mugrecloud": {
+    "hero_title": "MugreCloud",
+    "hero_subtitle": "Distributed computing on-demand. No data centers, no hidden costs.",
+    "hosting": "Hosting",
+    "hosting_desc": "Distributed web hosting with high availability and low latency across Spain.",
+    "render": "Render",
+    "render_desc": "Distributed rendering for 3D, video, and design projects without dedicated hardware.",
+    "ai": "AI Processing",
+    "ai_desc": "Distributed AI inference capacity for lightweight models and processing tasks.",
+    "storage": "Storage",
+    "storage_desc": "Distributed and redundant storage. Your data, replicated across multiple nodes.",
+    "arch_title": "Distributed architecture",
+    "arch_desc": "Each request is routed to the nearest available node. No bottlenecks, no single points of failure. The network adapts automatically to load and geographic distribution.",
+    "cta": "Start for free"
+  },
+  "mugrenetes": {
+    "hero_title": "Mugrenetes",
+    "hero_subtitle": "The node network that makes everything possible. Distributed, resilient, gamified.",
+    "what_title": "What is Mugrenetes?",
+    "what_desc": "Mugrenetes is the network layer connecting all distributed MugreCorp nodes. Each Intel N100 mini PC hosted in a home is a network node, providing computing and storage capacity.",
+    "resilience_title": "Built-in resilience",
+    "resilience_desc": "Physical decentralization enables fault tolerance, global outage mitigation, and a flexible network resistant to energy or geopolitical crises.",
+    "gamification_title": "Gamification",
+    "gamification_desc": "We promote a host community through rankings, achievements, and benefits. Each contributor strengthens the ecosystem organically and sustainably.",
+    "cta": "Become a host"
+  },
+  "vibeconf": {
+    "hero_title": "VibeConf AI 2025",
+    "hero_subtitle": "MugreCorp's AI and distributed technology event.",
+    "desc": "VibeConf brings together developers, researchers, and AI enthusiasts to explore the future of distributed computing, artificial intelligence, and eco-friendly infrastructure.",
+    "date": "Coming soon",
+    "location": "Online + In-person",
+    "cta": "Register"
+  },
+  "about": {
+    "hero_title": "About Us",
+    "hero_subtitle": "Building infrastructure for a greener, more distributed future.",
+    "mission_title": "Our mission",
+    "mission_desc": "MugreCorp Inc is a green and decentralized technology company offering distributed computing services using Intel N100 mini PCs hosted in homes across Spain. We focus on sustainability, energy efficiency, and digital resilience.",
+    "vision_title": "Our vision",
+    "vision_desc": "Reducing costs and emissions through innovative and collaborative infrastructure. We embrace ecology by reducing material usage, energy consumption, and avoiding high-impact traditional data centers.",
+    "values_title": "Our values",
+    "value1": "Sustainability",
+    "value1_desc": "Every decision is measured by its environmental impact. No data centers, no energy waste.",
+    "value2": "Decentralization",
+    "value2_desc": "Resilience comes from distribution. No single points of failure, no centralized control.",
+    "value3": "Community",
+    "value3_desc": "Hosts are the heart of MugreCorp. We gamify contribution to grow together.",
+    "offices_title": "Our offices",
+    "old_office": "Original office",
+    "new_office": "New office"
+  },
+  "legal": {
+    "privacy_title": "Privacy Policy",
+    "terms_title": "Terms of Use",
+    "privacy_content": "MugreCorp Inc is committed to protecting user privacy. We collect only the information necessary to provide our services: account data, service usage, and communication. We do not sell or share personal data with third parties for advertising purposes. We use industry-standard security measures to protect information. You may request deletion of your data at any time by contacting privacy@mugrecorp.com. This policy may be updated periodically. Continued use of our services constitutes acceptance of any changes.",
+    "terms_content": "By using MugreCorp Inc services, you accept these terms. Services are provided \"as is\" and \"as available.\" You are responsible for your use of the infrastructure and must comply with all applicable laws. MugreCorp is not liable for indirect, incidental, or consequential damages arising from the use of services. Hosts agree to provide a safe and stable environment for nodes. We reserve the right to suspend accounts that violate these terms. For disputes, the laws of Spain shall apply with jurisdiction in the competent courts."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Questions? Want to join as a host? Write to us.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "info_title": "Contact information",
+    "info_email": "hola@mugrecorp.com",
+    "info_location": "Spain"
+  },
+  "footer": {
+    "products": "Products",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "eu_inc": "MugreCorp EU Inc."
+  }
+}

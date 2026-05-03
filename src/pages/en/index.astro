@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NetworkCanvas from '../../components/NetworkCanvas';
+import ScrollReveal from '../../components/ScrollReveal';
+import CO2Counter from '../../components/CO2Counter';
+import { t } from '../../i18n/utils';
+
+const lang = 'en' as const;
+---
+
+<BaseLayout lang={lang}>
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/datacenter.webp" alt="" class="w-full h-full object-cover opacity-20" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black"></div>
+    </div>
+    <div class="absolute inset-0">
+      <NetworkCanvas client:load />
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
+      <ScrollReveal client:load>
+        <p class="text-emerald-500 font-medium text-sm sm:text-base tracking-widest uppercase mb-6">
+          {t('hero.tagline', lang)}
+        </p>
+      </ScrollReveal>
+      <ScrollReveal client:load delay={100}>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8 text-gradient">
+          {t('hero.title', lang)}
+        </h1>
+      </ScrollReveal>
+      <ScrollReveal client:load delay={200}>
+        <p class="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+          {t('hero.subtitle', lang)}
+        </p>
+      </ScrollReveal>
+      <ScrollReveal client:load delay={300}>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/en/mugrecloud" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors text-base">
+            {t('hero.cta_primary', lang)}
+          </a>
+          <a href="/en/mugrenetes" class="inline-flex items-center justify-center border border-zinc-700 hover:border-zinc-500 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-base">
+            {t('hero.cta_secondary', lang)}
+          </a>
+        </div>
+      </ScrollReveal>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">{t('howItWorks.title', lang)}</h2>
+          <p class="text-zinc-400 text-lg">{t('howItWorks.subtitle', lang)}</p>
+        </div>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <ScrollReveal client:load delay={0}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mx-auto mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2"/><path d="M19 21v-4"/><path d="M3 5h18"/><path d="M21 5-.8 5.6A2 2 0 0 0 19 7.5V17a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7.5a2 2 0 0 0-.2-1.9L3 5"/><path d="M7 5V3a2 2 0 0 1 2-2h2"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">{t('howItWorks.step1_title', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('howItWorks.step1_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={150}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mx-auto mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">{t('howItWorks.step2_title', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('howItWorks.step2_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={300}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mx-auto mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">{t('howItWorks.step3_title', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('howItWorks.step3_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">{t('products.title', lang)}</h2>
+          <p class="text-zinc-400 text-lg">{t('products.subtitle', lang)}</p>
+        </div>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ScrollReveal client:load delay={0}>
+          <a href="/en/mugrecloud" class="group block glass rounded-2xl overflow-hidden hover:border-emerald-500/30 transition-all">
+            <div class="relative h-56 overflow-hidden">
+              <img src="/images/mugrecloud-logo.png" alt="MugreCloud" class="w-full h-full object-contain p-8 opacity-80 group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-3">{t('products.mugrecloud_title', lang)}</h3>
+              <p class="text-zinc-400 leading-relaxed mb-4">{t('products.mugrecloud_desc', lang)}</p>
+              <span class="text-emerald-500 font-medium text-sm group-hover:underline">{t('products.mugrecloud_cta', lang)} →</span>
+            </div>
+          </a>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={150}>
+          <a href="/en/mugrenetes" class="group block glass rounded-2xl overflow-hidden hover:border-emerald-500/30 transition-all">
+            <div class="relative h-56 overflow-hidden">
+              <img src="/images/mugrenetes.webp" alt="Mugrenetes" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-3">{t('products.mugrenetes_title', lang)}</h3>
+              <p class="text-zinc-400 leading-relaxed mb-4">{t('products.mugrenetes_desc', lang)}</p>
+              <span class="text-emerald-500 font-medium text-sm group-hover:underline">{t('products.mugrenetes_cta', lang)} →</span>
+            </div>
+          </a>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sustainability -->
+  <section class="py-24 sm:py-32 bg-dark-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="/images/solar.webp" alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">{t('sustainability.title', lang)}</h2>
+          <p class="text-zinc-400 text-lg">{t('sustainability.subtitle', lang)}</p>
+        </div>
+      </ScrollReveal>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+        <ScrollReveal client:load delay={0}>
+          <div class="glass rounded-2xl p-6 sm:p-8 text-center">
+            <div class="text-3xl sm:text-4xl font-bold text-emerald-500 mb-2">
+              <CO2Counter client:visible target={47} suffix="t" />
+            </div>
+            <p class="text-zinc-400 text-sm">{t('sustainability.co2_saved', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={100}>
+          <div class="glass rounded-2xl p-6 sm:p-8 text-center">
+            <div class="text-3xl sm:text-4xl font-bold text-emerald-500 mb-2">
+              <CO2Counter client:visible target={128} />
+            </div>
+            <p class="text-zinc-400 text-sm">{t('sustainability.nodes_active', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={200}>
+          <div class="glass rounded-2xl p-6 sm:p-8 text-center">
+            <div class="text-3xl sm:text-4xl font-bold text-emerald-500 mb-2">
+              <CO2Counter client:visible target={73} suffix="%" />
+            </div>
+            <p class="text-zinc-400 text-sm">{t('sustainability.energy_saved', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={300}>
+          <div class="glass rounded-2xl p-6 sm:p-8 text-center">
+            <div class="text-3xl sm:text-4xl font-bold text-emerald-500 mb-2">
+              <CO2Counter client:visible target={56} />
+            </div>
+            <p class="text-zinc-400 text-sm">{t('sustainability.community', lang)}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">{t('community.title', lang)}</h2>
+          <p class="text-zinc-400 text-lg">{t('community.subtitle', lang)}</p>
+        </div>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { icon: '🏆', label: t('community.rankings', lang) },
+          { icon: '🎖️', label: t('community.badges', lang) },
+          { icon: '🎁', label: t('community.rewards', lang) },
+          { icon: '📈', label: t('community.growth', lang) },
+        ].map((item, i) => (
+          <ScrollReveal client:load delay={i * 100}>
+            <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+              <div class="text-4xl mb-4">{item.icon}</div>
+              <p class="font-medium">{item.label}</p>
+            </div>
+          </ScrollReveal>
+        ))}
+      </div>
+      <ScrollReveal client:load delay={400}>
+        <div class="text-center mt-12">
+          <a href="/en/mugrenetes" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors">
+            {t('community.cta', lang)}
+          </a>
+        </div>
+      </ScrollReveal>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <ScrollReveal client:load>
+        <h2 class="text-3xl sm:text-5xl font-bold mb-6 text-gradient">{t('cta.title', lang)}</h2>
+        <p class="text-zinc-400 text-lg mb-10 max-w-xl mx-auto">{t('cta.subtitle', lang)}</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/en/mugrecloud" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors">
+            {t('cta.primary', lang)}
+          </a>
+          <a href="/en/mugrenetes" class="inline-flex items-center justify-center border border-zinc-700 hover:border-zinc-500 text-white font-semibold px-8 py-4 rounded-lg transition-colors">
+            {t('cta.secondary', lang)}
+          </a>
+        </div>
+      </ScrollReveal>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,58 @@
+---
+import { t, getLocalizedPath, type Lang } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<footer class="border-t border-zinc-800/50 bg-dark-950">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="md:col-span-1">
+        <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3 mb-4">
+          <img src="/images/logo.png" alt="MugreCorp" class="h-8 w-8" />
+          <span class="font-bold text-lg tracking-tight">MugreCorp</span>
+        </a>
+        <p class="text-sm text-zinc-500 leading-relaxed">
+          {t('site.description', lang)}
+        </p>
+        <div class="mt-6">
+          <img src="/images/logo-eu-inc.png" alt={t('footer.eu_inc', lang)} class="h-12 opacity-60" />
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-zinc-400 mb-4">{t('footer.products', lang)}</h3>
+        <ul class="space-y-3">
+          <li><a href={getLocalizedPath('/mugrecloud', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('nav.mugrecloud', lang)}</a></li>
+          <li><a href={getLocalizedPath('/mugrenetes', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('nav.mugrenetes', lang)}</a></li>
+          <li><a href={getLocalizedPath('/vibeconf', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('nav.vibeconf', lang)}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-zinc-400 mb-4">{t('footer.company', lang)}</h3>
+        <ul class="space-y-3">
+          <li><a href={getLocalizedPath('/quienes-somos', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('nav.about', lang)}</a></li>
+          <li><a href={getLocalizedPath('/contacto', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('nav.contact', lang)}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-zinc-400 mb-4">{t('footer.legal', lang)}</h3>
+        <ul class="space-y-3">
+          <li><a href={getLocalizedPath('/privacidad', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('footer.privacy', lang)}</a></li>
+          <li><a href={getLocalizedPath('/terminos', lang)} class="text-sm text-zinc-500 hover:text-white transition-colors">{t('footer.terms', lang)}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-zinc-800/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-zinc-600">&copy; {new Date().getFullYear()} MugreCorp Inc. {t('footer.rights', lang)}</p>
+      <p class="text-xs text-zinc-600">{t('footer.eu_inc', lang)}</p>
+    </div>
+  </div>
+</footer>

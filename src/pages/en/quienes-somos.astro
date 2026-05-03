@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ScrollReveal from '../../components/ScrollReveal';
+import { t } from '../../i18n/utils';
+
+const lang = 'en' as const;
+---
+
+<BaseLayout lang={lang} title={t('about.hero_title', lang) + ' — MugreCorp'}>
+  <section class="relative min-h-[50vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark-900 to-black"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <ScrollReveal client:load>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">{t('about.hero_title', lang)}</h1>
+      </ScrollReveal>
+      <ScrollReveal client:load delay={100}>
+        <p class="text-xl sm:text-2xl text-zinc-400 max-w-2xl">{t('about.hero_subtitle', lang)}</p>
+      </ScrollReveal>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <ScrollReveal client:load>
+          <div class="glass rounded-2xl p-8 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">{t('about.mission_title', lang)}</h2>
+            <p class="text-zinc-400 text-lg leading-relaxed">{t('about.mission_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={150}>
+          <div class="glass rounded-2xl p-8 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">{t('about.vision_title', lang)}</h2>
+            <p class="text-zinc-400 text-lg leading-relaxed">{t('about.vision_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">{t('about.values_title', lang)}</h2>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <ScrollReveal client:load delay={0}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+            <div class="mb-6 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4.815a1.835 1.835 0 0 1-1.815-1.815V4.815A1.835 1.835 0 0 1 4.815 3h14.37A1.835 1.835 0 0 1 21 4.815V17.5"/><path d="m12 17-3-2.5L6 17"/><path d="M14 15h4"/><path d="M14 18h4"/><path d="M22 22H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2Z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('about.value1', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('about.value1_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={100}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+            <div class="mb-6 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('about.value2', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('about.value2_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={200}>
+          <div class="glass rounded-2xl p-8 text-center hover:border-emerald-500/30 transition-all">
+            <div class="mb-6 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">{t('about.value3', lang)}</h3>
+            <p class="text-zinc-400 leading-relaxed">{t('about.value3_desc', lang)}</p>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <div class="glass rounded-2xl overflow-hidden">
+          <img src="/images/solar.webp" alt="Sustainability" class="w-full opacity-70" />
+        </div>
+      </ScrollReveal>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">{t('about.offices_title', lang)}</h2>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <ScrollReveal client:load>
+          <div class="glass rounded-2xl overflow-hidden">
+            <img src="/images/old-office.webp" alt={t('about.old_office', lang)} class="w-full opacity-70" />
+            <div class="p-6 text-center">
+              <p class="font-medium text-zinc-300">{t('about.old_office', lang)}</p>
+            </div>
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={150}>
+          <div class="glass rounded-2xl overflow-hidden">
+            <img src="/images/new-office.webp" alt={t('about.new_office', lang)} class="w-full opacity-70" />
+            <div class="p-6 text-center">
+              <p class="font-medium text-zinc-300">{t('about.new_office', lang)}</p>
+            </div>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

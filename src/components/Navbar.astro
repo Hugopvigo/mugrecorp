@@ -1,0 +1,75 @@
+---
+import { t, getLocalizedPath, type Lang } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const links = [
+  { href: getLocalizedPath('/', lang), label: t('nav.home', lang) },
+  { href: getLocalizedPath('/mugrecloud', lang), label: t('nav.mugrecloud', lang) },
+  { href: getLocalizedPath('/mugrenetes', lang), label: t('nav.mugrenetes', lang) },
+  { href: getLocalizedPath('/vibeconf', lang), label: t('nav.vibeconf', lang) },
+  { href: getLocalizedPath('/quienes-somos', lang), label: t('nav.about', lang) },
+  { href: getLocalizedPath('/contacto', lang), label: t('nav.contact', lang) },
+];
+
+const currentPath = Astro.url.pathname;
+let langToggleHref: string;
+if (lang === 'es') {
+  langToggleHref = currentPath === '/' ? '/en/' : `/en${currentPath}`;
+} else {
+  langToggleHref = currentPath.replace('/en', '') || '/';
+}
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 glass">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3">
+      <img src="/images/logo.png" alt="MugreCorp" class="h-8 w-8" />
+      <span class="font-bold text-lg tracking-tight">MugreCorp</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-8">
+      {links.slice(1).map(link => (
+        <a href={link.href} class="text-sm text-zinc-400 hover:text-white transition-colors">
+          {link.label}
+        </a>
+      ))}
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href={langToggleHref} class="text-xs font-medium text-zinc-500 hover:text-white border border-zinc-800 rounded px-2 py-1 transition-colors">
+        {t('nav.lang', lang)}
+      </a>
+      <a href={getLocalizedPath('/mugrecloud', lang)} class="hidden sm:inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold text-sm px-4 py-2 rounded-lg transition-colors">
+        {t('hero.cta_primary', lang)}
+      </a>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-zinc-400 hover:text-white" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="md:hidden hidden border-t border-zinc-800">
+    <div class="px-4 py-4 space-y-3">
+      {links.map(link => (
+        <a href={link.href} class="block text-sm text-zinc-400 hover:text-white transition-colors py-1">
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>

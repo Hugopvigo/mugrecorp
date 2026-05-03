@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ScrollReveal from '../../components/ScrollReveal';
+import ContactForm from '../../components/ContactForm';
+import { t } from '../../i18n/utils';
+
+const lang = 'en' as const;
+---
+
+<BaseLayout lang={lang} title={t('contact.title', lang) + ' — MugreCorp'}>
+  <section class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal client:load>
+        <div class="text-center mb-16">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-4">{t('contact.title', lang)}</h1>
+          <p class="text-zinc-400 text-lg">{t('contact.subtitle', lang)}</p>
+        </div>
+      </ScrollReveal>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <ScrollReveal client:load>
+          <div class="glass rounded-2xl p-8 sm:p-10">
+            <ContactForm
+              client:load
+              nameLabel={t('contact.name', lang)}
+              emailLabel={t('contact.email', lang)}
+              messageLabel={t('contact.message', lang)}
+              sendLabel={t('contact.send', lang)}
+            />
+          </div>
+        </ScrollReveal>
+        <ScrollReveal client:load delay={150}>
+          <div class="glass rounded-2xl p-8 sm:p-10 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold mb-6">{t('contact.info_title', lang)}</h2>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span class="text-zinc-300">{t('contact.info_email', lang)}</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="text-zinc-300">{t('contact.info_location', lang)}</span>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
